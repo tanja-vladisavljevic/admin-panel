@@ -1,0 +1,21 @@
+/*** Login ***/
+body {
+  background-image: url("../img/login-bg.jpg");
+}
+.section-login {
+  max-width: 1500px;
+  margin: auto;
+}
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.btn-extended {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.card-panel {
+  background-color: rgba(13, 71, 161, 0.8);
+}

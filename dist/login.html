@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <!-- Import Font Awesome! -->
+    <script
+      src="https://kit.fontawesome.com/dc03b3b399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Css -->
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <!-- Icon -->
+    <link rel="icon" href="img/favicon.png" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+  </head>
+
+  <body class="grey lighten-4">
+    <!-- Glavni navigacioni meni -->
+    <div class="section section-login">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel login white-text center">
+              <h2 class="flow-text">Sign in</h2>
+              <form action="index.html">
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email" />
+                  <label class="white-text" for="email">Email</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">lock</i>
+                  <input type="password" id="password" />
+                  <label class="white-text" for="password">Password</label>
+                </div>
+                <input
+                  type="submit"
+                  value="Login"
+                  class="btn btn-large waves-effect waves-blue btn-extended grey lighten-4 black-text"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Circular Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>

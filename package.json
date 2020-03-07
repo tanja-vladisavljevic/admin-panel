@@ -1,0 +1,16 @@
+{
+  "name": "admin-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pahes -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://tanja-vladisavljevic.github.io/admin-panel",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

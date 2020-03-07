@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <!-- Css -->
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- Icon -->
+    <link rel="icon" href="img/favicon.png" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+  </head>
+
+  <body class="grey lighten-4">
+     <!-- Header, top-nav, sidenav fixed & sidenav mobile -->
+     <header class="section section-header">
+      <nav class="top-nav valign-wrapper light-blue darken-4">
+        <div class="container" id="container-nav">
+          <div class="nav-wrapper">
+            <div id="search-wrapper" class="hide-on-med-and-down input-field">
+              <i id="search-icon" class="white-text material-icons">search</i>
+              <input
+                id="search-box"
+                class="header-search-input z-depth-2 autocomplete"
+                type="text"
+                name="Search"
+                placeholder="search"
+              />
+              <label for="search-box"></label>
+            </div>
+            <ul id="right-nav" class="right">
+              <li id="account-li">
+                <a
+                  id="account-btn"
+                  class=" sidenav-trigger show-on-large small center"
+                  href="#!"
+                  data-target="sidenav-account"
+                >
+                  <i class="material-icons">account_circle</i>
+                </a>
+              </li>
+              <li id="notif-li">
+                <a
+                  id="notif-btn"
+                  class="dropdown-trigger btn-floating small cyan pulse"
+                  href="#!"
+                  data-target="dropdown-notifications"
+                  ><i class="material-icons">notifications_active</i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Sidenav Account -->
+      <ul id="sidenav-account" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="img/bg.jpg" alt="" />
+            </div>
+            <a href="#"
+              ><img src="img/users/person1.jpg" class="circle" alt=""
+            /></a>
+            <a href="#"><span class="name white-text">Jane Doe</span></a>
+            <a href="#"
+              ><span class="email white-text">janedoe@mail.com</span></a
+            >
+          </div>
+        </li>
+        <li>
+          <a href="#settings-modal" class="modal-trigger">
+            <i class="material-icons grey-text">settings</i
+            ><span class="cyan-text">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="material-icons grey-text">keyboard_tab</i
+            ><span class="cyan-text">Logout</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Dropdown Notifications Content -->
+      <ul id="dropdown-notifications" class="dropdown-content">
+        <li>
+          <h6 class="header header-notif">
+            NOTIFICATIONS<span class="new badge blue">3</span>
+          </h6>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="#!" class="black-text">
+            <span class="material-icons icon-circle cyan">mode_comment</span>
+            New comment in UI/UX Design category
+          </a>
+          <time class="grey-text" datetime="2020-06-12T20:50:48+08:00">
+            2 hours ago
+          </time>
+        </li>
+        <li>
+          <a href="#!" class="black-text">
+            <span class="material-icons icon-circle cyan">mode_comment</span>
+            New comment in Web Design category
+          </a>
+          <time class="grey-text" datetime="2020-06-12T20:50:48+08:00">
+            4 hours ago
+          </time>
+        </li>
+        <li>
+          <a href="#!" class="black-text">
+            <span class="material-icons icon-circle light-blue darken-4">
+              supervisor_account
+            </span>
+            New subscriber!
+          </a>
+          <time class="grey-text" datetime="2020-06-12T20:50:48+08:00">
+            4 hours ago
+          </time>
+        </li>
+      </ul>
+
+      <!-- Sidenav Trigger-->
+      <div class="container">
+        <a
+          href="#"
+          data-target="nav-mobile"
+          class="top-nav sidenav-trigger hide-on-large-only"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+      <!-- Sidenav fixed-->
+      <ul id="nav-mobile-fixed" class="sidenav sidenav-fixed">
+        <li class="logo">
+          <a class="brand-logo"><h5 class="header">Admin Panel</h5></a>
+        </li>
+        <li>
+          <a href="index.html" class="waves-effect waves-dashboard"
+            ><i class="material-icons grey-text text-lighten-1">dashboard</i
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="pages.html" class="waves-effect waves-purple"
+            ><i class="material-icons grey-text text-lighten-1">description</i
+            >Pages</a
+          >
+        </li>
+        <li>
+          <a href="posts.html" class="waves-effect waves-green"
+            ><i class="material-icons grey-text text-lighten-1">mode_edit</i
+            >Posts</a
+          >
+        </li>
+        <li>
+          <a href="categories.html" class="waves-effect waves-amber"
+            ><i class="material-icons grey-text text-lighten-1">folder</i
+            >Categories</a
+          >
+        </li>
+        <li>
+          <a href="comments.html" class="waves-effect waves-yellow"
+            ><i class="material-icons grey-text text-lighten-1"
+              >question_answered</i
+            >Comments</a
+          >
+        </li>
+        <li>
+          <a href="users.html" class="waves-effect waves-blue"
+            ><i class="material-icons grey-text text-lighten-1"
+              >supervisor_account</i
+            >Users</a
+          >
+        </li>
+        <li></li>
+      </ul>
+      <!-- Sidenav mobile-->
+      <ul id="nav-mobile" class="sidenav">
+        <li class="logo">
+          <a class="brand-logo"><h5 class="header center">Admin Panel</h5></a>
+        </li>
+        <li class="grey lighten-4">
+          <div class="row" id="topbarsearch-mobile">
+            <div class="input-field col s6 s12 red-text">
+              <input type="text" placeholder="search" class="black-text" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="index.html"
+            ><i class="material-icons grey-text text-lighten-1">dashboard</i
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="pages.html"
+            ><i class="material-icons grey-text text-lighten-1">description</i
+            >Pages</a
+          >
+        </li>
+        <li>
+          <a href="posts.html"
+            ><i class="material-icons grey-text text-lighten-1">mode_edit</i
+            >Posts</a
+          >
+        </li>
+        <li>
+          <a href="categories.html"
+            ><i class="material-icons grey-text text-lighten-1">folder</i
+            >Categories</a
+          >
+        </li>
+        <li>
+          <a href="comments.html"
+            ><i class="material-icons grey-text text-lighten-1"
+              >question_answered</i
+            >Comments</a
+          >
+        </li>
+        <li>
+          <a href="users.html"
+            ><i class="material-icons grey-text text-lighten-1"
+              >supervisor_account</i
+            >Users</a
+          >
+        </li>
+        <li>
+          <div class="left row">
+            <div class="col s12 "></div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <!-- Sekcija: Pages -->
+    <section class="section section-pages grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Pages</span>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Date Created</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Home</td>
+                      <td>December 24, 2019</td>
+                      <td>
+                        <a id="home" href="#details" data-target="modal-details" class="modal-trigger btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>About</td>
+                      <td>December 24, 2019</td>
+                      <td>
+                        <a id="about" href="#details" data-target="modal-details" class="modal-trigger btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Categories</td>
+                      <td>January 14, 2020</td>
+                      <td>
+                        <a id="categories" href="#details" data-target="modal-details" class="modal-trigger btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Contact</td>
+                      <td>January 15, 2020</td>
+
+                      <td>
+                        <a id="contact" href="#details" data-target="modal-details" class="modal-trigger btn blue lighten-2"
+                          >Details</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="card-action">
+                  <ul class="pagination center">
+                    <li class="disabled">
+                      <a href="#!" class="blue-text">
+                        <i class="material-icons">chevron_left</i>
+                      </a>
+                    </li>
+                    <li class="active blue lighten-2">
+                      <a href="#!" class="white-text">1 </a>
+                    </li> 
+                    <li class="waves-effect">
+                      <a href="#!" class="blue-text">
+                        <i class="material-icons">chevron_right</i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!-- Modal Details -->
+    <div id="modal-details" class="modal">
+      <div class="modal-content">
+        <h4>Page Details</h4>
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="page-title" value="Home">
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea name="description" id="page-description" cols="30" rows="10">Contains recent and popular blog posts.
+          </textarea>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Posts</span>
+                  <table class="striped">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Date Created</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Post One</td>
+                        <td>Web Development</td>
+                        <td>December 24, 2019</td>
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Post Two</td>
+                        <td>Graphic Design</td>
+                        <td>September 14, 2019</td>
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Post Three</td>
+                        <td>Software Development</td>
+                        <td>August 24, 2019</td>
+  
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Post Four</td>
+                        <td>Other</td>
+                        <td>August 4, 2019</td>
+  
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Post Five</td>
+                        <td>Web Development</td>
+                        <td>July 26, 2019</td>
+  
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Post Six</td>
+                        <td>Graphic Design</td>
+                        <td>July 14, 2019</td>
+                        <td>
+                          <a href="post-details.html" class="btn blue lighten-2"
+                            >Details</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="card-action">
+                    <ul class="pagination center">
+                      <li class="disabled">
+                        <a href="#!" class="blue-text">
+                          <i class="material-icons">chevron_left</i>
+                        </a>
+                      </li>
+                      <li class="active blue lighten-2">
+                        <a href="#!" class="white-text">1 </a>
+                      </li>
+                      <li class="waves-effect ">
+                        <a href="#!" class="blue-text">2 </a>
+                      </li>
+                      <li class="waves-effect ">
+                        <a href="#!" class="blue-text">3 </a>
+                      </li>
+                      <li class="waves-effect ">
+                        <a href="#!" class="blue-text">4 </a>
+                      </li>
+                      <li class="waves-effect ">
+                        <a href="#!" class="blue-text">5 </a>
+                      </li>
+                      <li class="waves-effect">
+                        <a href="#!" class="blue-text">
+                          <i class="material-icons">chevron_right</i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="date-created">Date Created:</label>
+          <input type="text" id="date-created" name="date-created" value="December 24, 2019" disabled>
+        </div>
+        <div>
+          <label for="date-edited">Date Edited:</label>
+          <input type="text" id="date-edited" name="date-edited" value="/" disabled>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn blue white-text">Cancel</a>
+          <a href="#save-changes" data-target="save-changes" class="modal-trigger modal-action modal-close btn teal white-text">Save</a>
+          <a href="#delete-page" data-target="delete-page" class="modal-trigger modal-action modal-close btn red white-text">Delete</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Save Changes -->
+    <div id="save-changes" class="modal">
+      <div class="modal-content">
+        <p>Do you want to save changes?</p>
+        <div class="modal-footer">
+          <a href="#!" onclick="M.toast({html: 'Changes are saved!'})" class="modal-action modal-close btn grey white-text">Yes</a>
+          <a href="#!" class="modal-action modal-close btn grey white-text">Cancel</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Delete Page -->
+    <div id="delete-page" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to delete this page?</p>
+        <div class="modal-footer">
+          <a href="#!" onclick="M.toast({html: 'Page is deleted!'})" class="modal-action modal-close btn grey white-text">Yes</a>
+          <a href="#!" class="modal-action modal-close btn grey white-text">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Account Settings -->
+    <div id="settings-modal" class="modal">
+      <div class="modal-content">
+        <h4>Profile Details</h4>
+        <div>
+          <img
+            id="profile-user-img"
+            src="img/users/person1.jpg"
+            alt="user"
+            class="responsive-img circle"
+            style="width: 75px; margin-left: 10px;"
+          />
+        </div>
+        <div class="file-field input-field">
+          <div class="btn blue">
+            <span>Change photo</span>
+            <input type="file" />
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" />
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="profile-name"><h6>Name:</h6></label>
+          <input
+            type="text"
+            name="name"
+            id="profile-user-name"
+            value="Jane Doe"
+          />
+        </div>
+        <div class="input-field">
+          <label for="profile-email"><h6>Email:</h6></label>
+          <input
+            type="text"
+            name="email"
+            id="profile-user-email"
+            value="janedoe@mail.com"
+          />
+        </div>
+        <div>
+          <label for="profile-date-registered">Date Registered:</label>
+          <input
+            type="text"
+            id="profile-date-registered"
+            name="date-registered"
+            value="December 26, 2020"
+            disabled
+          />
+        </div>
+        <br />
+        <div class="switch">
+          <label>
+            Active Profile
+            <input disabled type="checkbox" />
+            <span class="lever"></span>
+            Disabled Profile
+          </label>
+        </div>
+        <br />
+        <div class="input-field">
+          <label for="profile-user-type">User type:</label>
+          <input
+            type="text"
+            id="profile-user-type"
+            name="user-type"
+            value="Admin"
+            disabled
+          />
+        </div>
+        <label for="select-profile-user-type">Change user type:</label>
+        <div class="input-field col s12">
+          <select id="select-profile-user-type" name="select-user-type">
+            <option id="1" value="1">Admin</option>
+            <option id="2" value="2">Subscriber</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="save-profile modal-trigger modal-action modal-close btn grey white-text"
+            >Save</a
+          >
+          <a href="#!" class="modal-action modal-close btn grey white-text"
+            >Cancel</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Floating dugme: fixed action button i Page modal -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="material-icons">add</i>
+      </a>
+      <ul>
+        <li>
+          <a href="#page-modal" class=" modal-trigger btn-floating purple">
+            <i class="material-icons">description</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Floating dugme: fixed action button i Page modal MOBILE -->
+    <div class="fixed-action-btn toolbar hide-on-large-only">
+      <a class="btn-floating btn-large red">
+        <i class="material-icons">add</i>
+      </a>
+      <ul>
+        <li>
+          <a href="#page-modal" class=" modal-trigger purple">
+            <i class="material-icons">description</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Dodaj Stranicu (Add Page) Modal -->
+    <div id="page-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add Page</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="title-page" required />
+            <label for="title-page">Title:</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="description-page" />
+            <label for="description-page">Description:</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close btn blue white-text"
+            >Submit</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Circular Preloader -->
+    <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="section section-footer center white-text">
+      <p id="footer-text">Admin Panel &copy; 2020</p>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/pages.js"></script>
+  </body>
+</html>
