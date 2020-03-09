@@ -345,7 +345,14 @@ a.sidenav-trigger.top-nav {
   margin-bottom: 0;
 }
 
-/* Metrial Login icon prefix */
+/* Material Login icon prefix */
 .material-icons.prefix.active {
   color: #2196f3;
+}
+
+/* Modal footer */
+.modal-footer {
+  text-align: center !important;
+  height: 100% !important;
+  box-sizing: border-box;
 }
