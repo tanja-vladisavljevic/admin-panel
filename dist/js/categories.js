@@ -84,7 +84,7 @@ setTimeout(function() {
     $("a#graphic-design").click(function() {
       $("input#cat-title").attr("value", "Graphic Design");
       $("#cat-description").val("Topics related to Graphic Design.");
-      $("input#date-created").val("January 14, 2020");
+      $("input#date-created").val("December 25, 2019");
       $("input#date-edited").val("/");
       console.log("graphic-design");
     });
@@ -92,7 +92,7 @@ setTimeout(function() {
     $("a#ui-ux-design").click(function() {
       $("input#cat-title").attr("value", "UI/UX Design");
       $("#cat-description").val("Topics related to UI/UX Design.");
-      $("input#date-created").val("January 14, 2020");
+      $("input#date-created").val("December 25, 2019");
       $("input#date-edited").val("/");
       console.log("ui-ux-design");
     });
@@ -100,15 +100,15 @@ setTimeout(function() {
     $("a#web-design").click(function() {
       $("input#cat-title").attr("value", "Web Design");
       $("#cat-description").val("Topics related to Web Design.");
-      $("input#date-created").val("January 14, 2020");
-      $("input#date-edited").val("January 14, 2020");
+      $("input#date-created").val("December 25, 2019");
+      $("input#date-edited").val("December 26, 2019");
       console.log("web-design");
     });
     //Details-Web Development
     $("a#web-dev").click(function() {
       $("input#cat-title").attr("value", "Web Development");
       $("#cat-description").val("Topics related to Web Development.");
-      $("input#date-created").val("January 25, 2020");
+      $("input#date-created").val("December 25, 2019");
       $("input#date-edited").val("/");
       console.log("web-dev");
     });
@@ -116,7 +116,7 @@ setTimeout(function() {
     $("a#other").click(function() {
       $("input#cat-title").attr("value", "Other");
       $("#cat-description").val("Miscellaneous topics related to IT.");
-      $("input#date-created").val("January 25, 2020");
+      $("input#date-created").val("December 25, 2019");
       $("input#date-edited").val("/");
       console.log("other");
     });

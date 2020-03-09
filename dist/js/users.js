@@ -95,7 +95,7 @@ setTimeout(function() {
       $("img#user-img").attr("src", "img/users/person1.jpg");
       $("input#user-name").val("Jane Doe");
       $("input#user-email").val("janedoe@mail.com");
-      $("input#date-registered").val("December 26, 2020");
+      $("input#date-registered").val("December 25, 2019");
       $("input#user-type").val("Admin");
 
       console.log("");
@@ -105,7 +105,7 @@ setTimeout(function() {
       $("img#user-img").attr("src", "img/users/person2.jpg");
       $("input#user-name").val("Phill Knowles");
       $("input#user-email").val("pknowles@mail.com");
-      $("input#date-registered").val("January 30, 2020");
+      $("input#date-registered").val("January 3, 2020");
       $("input#user-type").val("Subscriber");
 
       console.log("");
@@ -115,7 +115,7 @@ setTimeout(function() {
       $("img#user-img").attr("src", "img/users/person3.jpg");
       $("input#user-name").val("Mark Johnson");
       $("input#user-email").val("markjohnson@mail.com");
-      $("input#date-registered").val("January 31, 2020");
+      $("input#date-registered").val("January 18, 2020");
       $("input#user-type").val("Subscriber");
 
       console.log("");
