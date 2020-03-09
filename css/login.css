@@ -15,6 +15,7 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 20px;
+  background-color: rgba(134, 156, 190, 0.8);
 }
 .card-panel {
   background-color: rgba(13, 71, 161, 0.8);
